@@ -23,7 +23,8 @@ public class Fragment2 extends Fragment {
             @Override
             public void onClick(View v) {
                 Fragment3 fragment3 =new Fragment3() ;
-                getFragmentManager() .beginTransaction() .replace(R.id.l2,fragment3 ).addToBackStack("").commit() ;
+                getFragmentManager() .beginTransaction() .replace(R.id.l2,fragment3 ).addToBackStack("").commit();
+                //getFragmentManager() .popBackStack() ;
             }
         });
         return view;
